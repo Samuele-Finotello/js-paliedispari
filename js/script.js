@@ -8,5 +8,12 @@ function Palindroma() {
   for (let i = minuscola.length - 1; i >= 0; i--) {
     reversed.push(minuscola[i]);
   }
+  let check = minuscola.split("");
+  if (reversed.toString() === check.toString()) {
+    console.log(`La parola "${parola}" e' palindroma:\n${check}\n${reversed}`)
+  }
+  else {
+    console.log(`La parola "${parola}" non e' palindroma:\n${check}\n${reversed}`)
+  }
 }
 Palindroma();
