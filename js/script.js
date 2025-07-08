@@ -24,7 +24,28 @@ function numRandom() {
   return Math.floor(Math.random() * 5) + 1;
 }
 
+function pariODispari() {
+  if (somma % 2 === 0) {
+    if (scelta === 'pari') {
+      return console.log(`La somma di ${numUser} e di ${numPc} e' ${somma}: pari, hai vinto`);
+    }
+    else
+      return console.log(`La somma di ${numUser} e di ${numPc} e' ${somma}: pari, hai perso`);
+  }
+  else {
+    if (scelta === 'dispari') {
+      return console.log(`La somma di ${numUser} e di ${numPc} e' ${somma}: dispari, hai vinto`);
+    }
+    else
+      return console.log(`La somma di ${numUser} e di ${numPc} e' ${somma}: dispari, hai perso`);
+  }
+}
+
 const scelta = prompt('Scegli pari o dispari');
 const numUser = parseInt(prompt('Scegli un numero da 1 a 5'));
+const numPc = numRandom();
 
-console.log(numRandom());
+const somma = numPc + numUser;
+
+pariODispari();
+
