@@ -22,3 +22,9 @@ Palindroma();
 //definizione variabili
 const scelta = prompt('Scegli pari o dispari');
 const numUser = parseInt(prompt('Scegli un numero da 1 a 5'));
+
+function numRandom() {
+  const numPc = Math.floor(Math.random() * 5) + 1;
+  console.log(numPc);
+}
+numRandom();
