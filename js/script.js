@@ -17,3 +17,8 @@ function Palindroma() {
   }
 }
 Palindroma();
+
+//Pari o dispari
+//definizione variabili
+const scelta = prompt('Scegli pari o dispari');
+const numUser = parseInt(prompt('Scegli un numero da 1 a 5'));
