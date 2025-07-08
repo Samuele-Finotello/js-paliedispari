@@ -19,12 +19,12 @@ function Palindroma() {
 Palindroma();
 
 //Pari o dispari
-//definizione variabili
+//definizione funzioni
+function numRandom() {
+  return Math.floor(Math.random() * 5) + 1;
+}
+
 const scelta = prompt('Scegli pari o dispari');
 const numUser = parseInt(prompt('Scegli un numero da 1 a 5'));
 
-function numRandom() {
-  const numPc = Math.floor(Math.random() * 5) + 1;
-  console.log(numPc);
-}
-numRandom();
+console.log(numRandom());
